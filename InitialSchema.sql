@@ -46,7 +46,7 @@ INSERT INTO p_entity (id, p_status) VALUES (1, 'Good PStatus'), (2, 'Bad PStatus
 INSERT INTO u_entity (p_id, id) VALUES (1, 1), (1, 2), (1, 3), (2, 1);
 INSERT INTO l_entity (id, t_status, t_id, p_id, u_id) VALUES
     (1, 'Good TStatus', 1, 1, 1),
-    (2, 'Bad TStatus', 1, 3, 2),
+    (2, 'Bad TStatus', 1, 1, 3),
     (3, 'Good TStatus', 1, 2, 2),
     (4, 'Good TStatus', 2, 2, 3);
 INSERT INTO d_entity (id, linked_entity_id, linked_entity_type) VALUES
