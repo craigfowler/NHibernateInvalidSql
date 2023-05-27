@@ -1,11 +1,13 @@
 # NHibernate regression
 
-This project demonstrates a reproduction case for a bug/regression I have found in NHibernate.  The bug causes NHibernate to produce syntactically invalid SQL in the described scenario.
+This project demonstrates a reproduction case for [a bug/regression I have found in NHibernate].  The bug causes NHibernate to produce syntactically invalid SQL in the described scenario.
 The _last good version_ in which the bug cannot be reproduced is v5.3.10.
 The _first bad version_ in which I can reproduce the issue is v5.3.11.
 I have also been able to reproduce in v5.4.2 which as at the time of writing, is the latest version.
 
 The nature of the issue is that, for the mappings described here and the query performed, NHibernate generates invalid SQL which is rejected by the database.
+
+[a bug/regression I have found in NHibernate]: https://github.com/nhibernate/nhibernate-core/issues/3306
 
 ## How to reproduce
 
